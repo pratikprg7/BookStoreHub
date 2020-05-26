@@ -1,0 +1,42 @@
+<div class="header">
+    <mat-card>
+        <mat-card-title>The Book Store</mat-card-title>
+    </mat-card>
+</div>
+<div class="body">
+    <mat-card-content>
+        <p>
+            <mat-form-field>
+                <input type="text" matInput placeholder="First Name" formControlName="First Name">
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field>
+                <input type="text" matInput placeholder="Last Name" formControlName="Last Name">
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field>
+                <input type="email" matInput placeholder="Email Id" formControlName="Email Id">
+            </mat-form-field>
+        </p>
+
+        <p>
+            <mat-form-field>
+                <input type="password" matInput placeholder="Password" formControlName="password">
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field>
+                <input type="password" matInput placeholder="Confirm Password" formControlName="password">
+            </mat-form-field>
+        </p>
+
+        <div class="button">
+            <button type="submit" mat-raised-button color="accent">Create User</button>
+        </div>
+    </mat-card-content>
+</div>
+<nav>
+    <a routerLink="/loginpage"> Login </a>
+</nav>

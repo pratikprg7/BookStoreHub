@@ -7,12 +7,14 @@ import { LoginpageComponent } from './loginpage/loginpage.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
+import { SignupComponent } from './signup/signup.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginpageComponent
+    LoginpageComponent,
+    SignupComponent
   ],
   imports: [
     MatButtonModule,
