@@ -4,6 +4,10 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
+
 
 @NgModule({
   declarations: [
@@ -11,6 +15,9 @@ import { LoginpageComponent } from './loginpage/loginpage.component';
     LoginpageComponent
   ],
   imports: [
+    MatButtonModule,
+    MatInputModule,
+    MatCardModule,
     BrowserModule,
     AppRoutingModule
   ],
