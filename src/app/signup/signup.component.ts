@@ -16,13 +16,17 @@ export class SignupComponent implements OnInit {
   registerUser(event){
 
     event.preventDefault()
-
+    const error = []
     const target = event.target
     const firstname = event.target.querySelector('#FirstName').value
     const lastname = event.target.querySelector('#LastName').value
     const email = event.target.querySelector('#Emailid').value
     const password = event.target.querySelector('#password').value
     const cpassowrd = event.target.querySelector('#cpassword').value
+
+    if(password != cpassowrd){
+      error.push("Password do not match");
+    }
 
     console.log(firstname, lastname, email, password, cpassowrd)
   }
