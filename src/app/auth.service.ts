@@ -10,4 +10,8 @@ export class AuthService {
   getUserDetails(username, passowrd){
     //Check Authentication
   }
+
+  registerUserDetails(){
+    //Registering new user
+  }
 }
