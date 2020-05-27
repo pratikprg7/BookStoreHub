@@ -9,6 +9,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { SignupComponent } from './signup/signup.component';
 import { HeaderComponent } from './header/header.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 
 
 @NgModule({
@@ -20,6 +22,7 @@ import { HeaderComponent } from './header/header.component';
   ],
   imports: [
     MatButtonModule,
+    FlexLayoutModule,
     MatInputModule,
     MatCardModule,
     BrowserModule,
