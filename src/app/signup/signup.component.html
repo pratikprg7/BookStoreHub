@@ -1,21 +1,22 @@
+<form (submit)="registerUser($event)">
 <div class="body">
     <mat-card-content>
         <div fxLayout="column" fxLayoutAlign="center center">
             
             <mat-form-field>
-                <input type="text" matInput placeholder="First Name">
+                <input type="text" matInput placeholder="First Name" id="FirstName">
             </mat-form-field>
             <mat-form-field>
-                <input type="text" matInput placeholder="Last Name">
+                <input type="text" matInput placeholder="Last Name" id="LastName">
             </mat-form-field>
             <mat-form-field>
-                <input type="email" matInput placeholder="Email Id">
+                <input type="email" matInput placeholder="Email Id" id="Emailid">
             </mat-form-field>
             <mat-form-field>
-                <input type="password" matInput placeholder="Password">
+                <input type="password" matInput placeholder="Password" id="password">
             </mat-form-field>
             <mat-form-field>
-                <input type="password" matInput placeholder="Confirm Password">
+                <input type="password" matInput placeholder="Confirm Password" id="cpassword">
             </mat-form-field>
             
             <div fxLayout="row" fxLayoutAlign="center center">
@@ -30,3 +31,4 @@
         </div>
     </mat-card-content>
 </div>
+</form>

@@ -1,11 +1,12 @@
+<form (submit)="loginUser($event)">
 <div class="body">
   <mat-card-content>
     <div fxLayout="column" fxLayoutAlign="sapce-around center">
       <mat-form-field>
-        <input type="text" matInput placeholder="Username" />
+        <input type="text" matInput placeholder="Username" id="username"/>
       </mat-form-field>
       <mat-form-field>
-        <input type="password" matInput placeholder="Password" />
+        <input type="password" matInput placeholder="Password" id="password"/>
       </mat-form-field>
     </div>
     <div fxLayout="row" fxLayoutAlign="center center">
@@ -20,3 +21,4 @@
     </div>
   </mat-card-content>
 </div>
+</form>
