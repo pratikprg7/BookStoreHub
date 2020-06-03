@@ -1,3 +1,15 @@
+const express = require('express')
+const bodyParser = require('body-parser')
+const app =  express();
+
+app.use(bodyParser.json())
+
+app.post('/api/register', (req, res) => {
+    console.log(req.body)
+})
+
+app.listen(1234, () => console.log('listening to the server'))
+
 /**var express = require('express');
 var path = require("path");
 var bodyParser = require('body-parser');

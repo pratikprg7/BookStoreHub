@@ -1,4 +1,26 @@
-<form (submit)="loginUser($event)">
+<form [formGroup]="loginForm" (ngSubmit)="handleSubmit()">
+  <mat-card-content>
+    <div fxLayout="column" fxLayoutAlign="sapce-around center">
+      <mat-form-field>
+        <input type="text" matInput placeholder="Username" formControlName="username"/>
+      </mat-form-field>
+    <mat-form-field>
+        <input type="text" matInput placeholder="Password" formControlName="password"/>
+      </mat-form-field>
+    </div>
+  </mat-card-content>
+<button type="submit" mat-raised-button color="accent">Login</button>
+
+<nav>
+  <button mat-raised-button color="accent">
+    <a routerLink="/signup"> Sign Up </a>
+  </button>
+</nav>
+  
+</form>
+
+
+<!--<form (submit)="loginUser($event)">
 <div class="body">
   <mat-card-content>
     <div fxLayout="column" fxLayoutAlign="sapce-around center">
@@ -21,4 +43,4 @@
     </div>
   </mat-card-content>
 </div>
-</form>
+</form>-->

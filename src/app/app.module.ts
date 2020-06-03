@@ -11,7 +11,8 @@ import { MatInputModule } from '@angular/material/input';
 import { SignupComponent } from './signup/signup.component';
 import { HeaderComponent } from './header/header.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
-//import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 //import { CommonService} from './common.service';
 
 
@@ -25,6 +26,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   ],
   imports: [
     MatButtonModule,
+    ReactiveFormsModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
     MatInputModule,
